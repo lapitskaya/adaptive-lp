@@ -73,7 +73,6 @@ body {
   width: 100%;
   max-width: 960px;
   margin: 0 auto;
-  padding-top: 170px;
   padding-bottom: 215px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -91,8 +90,7 @@ body {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
-    padding-top: 185px; } }
+            flex-direction: row-reverse; } }
 
 .main-child {
   -ms-flex-preferred-size: 50%;
@@ -101,7 +99,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+  margin-top: 20px; }
   .main-child--small {
     margin-left: 0;
     margin-right: 10px; }
