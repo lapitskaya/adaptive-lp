@@ -1,0 +1,14 @@
+.block-3 {
+  position: relative;
+
+  @include nav-numbers ('3', 30px, 15px);
+}
+
+@media screen and (min-width: 600px) {
+  .block-3 {
+
+    &:after {
+      right: 45px;
+    }
+  }
+}

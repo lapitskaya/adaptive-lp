@@ -1,0 +1,17 @@
+.svg__circle {
+  fill: #636363;
+  transition: all .1s;
+}
+
+.svg__circle:hover {
+  fill: #00e296;
+  stroke: #00b492;
+  transition: all .1s;
+}
+
+@media screen and (min-width: 600px) {
+  .svg {
+    width: 100px;
+    height: 100px;
+  }
+}

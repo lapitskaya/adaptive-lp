@@ -1,0 +1,15 @@
+.main {
+  @include wrapper;
+  padding-top: 170px;
+  padding-bottom: 215px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 600px) {
+  .main {
+    flex-direction: row-reverse;
+    padding-top: 185px;
+  }
+}

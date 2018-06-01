@@ -1,0 +1,18 @@
+.block-5 {
+  margin-left: 0;
+  margin-right: 5px;
+  flex-basis: 50%;
+  position: relative;
+
+  @include nav-numbers ('5', 30px, 15px);
+}
+
+@media screen and (min-width: 600px) {
+  .block-5 {
+    @include flex-child-2of2;
+
+    &:after {
+      right: 45px;
+    }
+  }
+}

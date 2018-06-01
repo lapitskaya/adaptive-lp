@@ -1,0 +1,60 @@
+@font-face {
+  font-family: "NotoSans";
+  src: url("../fonts/NotoSans.woff2") format("woff2"), url("../fonts/NotoSans.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+$primary-text-color: #000000;
+$primary-blocks-color: #ebebeb;
+$primary-blocks-height: 150px;
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "NotoSans", "Verdana", sans-serif;
+  font-weight: 400;
+  background-color: #ffffff;
+  color: $primary-text-color;
+}
+
+.master {
+  min-height: calc(100vh - 80px);
+}
+
+@mixin general-block {
+  min-height: $primary-blocks-height;
+  background-color: $primary-blocks-color;
+}
+
+@mixin wrapper {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+@mixin flex-child-1of2 {
+  margin-left: 0;
+  margin-right: 10px;
+}
+
+@mixin flex-child-2of2 {
+  margin-left: 10px;
+  margin-right: 0;
+}
+
+@mixin nav-numbers ($number, $bottom, $right) {
+  &:after {
+    content: $number;
+    color: #bfbfbf;
+    position: absolute;
+    font-size: 60px;
+    right: $right;
+    bottom: $bottom;
+  }
+}

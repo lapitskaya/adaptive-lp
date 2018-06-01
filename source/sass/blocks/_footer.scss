@@ -1,0 +1,14 @@
+.footer {
+  min-height: 80px;
+  background-color: $primary-blocks-color;
+  position: relative;
+  @include wrapper;
+
+ @include nav-numbers ('8', 0, 15px);
+}
+
+@media screen and (min-width: 600px) {
+  .footer:after {
+    right: 45px;
+  }
+}

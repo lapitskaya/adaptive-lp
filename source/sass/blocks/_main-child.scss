@@ -1,0 +1,46 @@
+.main-child {
+  flex-basis: 50%;
+  display: flex;
+  flex-wrap: wrap;
+
+  &--small {
+    @include flex-child-1of2;
+  }
+
+  &--big {
+    @include flex-child-2of2;
+  }
+
+  &__child {
+
+    &--top {
+      @include general-block;
+      flex-basis: 100%;
+      margin-bottom: 20px;
+    }
+
+    &--bottom {
+      flex-basis: 100%;
+      display: flex;
+      flex-direction: row;
+    }
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .main-child {
+    &--small {
+      flex-basis: 320px;
+      @include flex-child-2of2;
+    }
+
+    &--big {
+      flex-basis: 620px;
+      @include flex-child-1of2;
+    }
+
+    &__child--bottom {
+      flex-direction: row-reverse;
+    }
+  }
+}

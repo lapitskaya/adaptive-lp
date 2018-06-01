@@ -1,0 +1,43 @@
+.header {
+  @include general-block;
+  @include wrapper;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  z-index: 100;
+
+  @include nav-numbers ('1', 30px, 15px);
+
+  &__img-container {
+    padding: 0 20px 0 25px;
+  }
+
+  &__title {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 400;
+  }
+
+  &__subtitle {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .header {
+    margin-top: 15px;
+
+    &__title {
+      font-size: 36px;
+    }
+
+    &__subtitle {
+      font-size: 18px;
+    }
+
+    &:after {
+      right: 45px;
+    }
+  }
+}

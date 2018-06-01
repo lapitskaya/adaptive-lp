@@ -1,0 +1,6 @@
+.bottom-child {
+
+  &__child {
+    @include general-block;
+  }
+}
